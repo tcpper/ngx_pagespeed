@@ -143,7 +143,7 @@ namespace net_instaweb {
     // if it's a valid IP address and only if that fails fall back to
     // using the DNS resolver.
 
-    // Maybe we have a Proxy
+    // Maybe we have a Proxy.
     ngx_url_t* tmp_url = &url_;
     if (0 != fetcher_->proxy_.url.len) {
       tmp_url = &fetcher_->proxy_;
